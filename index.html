@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>个人博客</h1>
+            <button id="theme-toggle" class="btn">🌙 切换主题</button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#blog">博客</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>文章分类</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">全部</button>
+                        <button class="filter-btn" data-category="tech">技术</button>
+                        <button class="filter-btn" data-category="life">生活</button>
+                        <button class="filter-btn" data-category="travel">旅行</button>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3>关于我</h3>
+                    <p>热爱编程，热爱生活，记录成长的点滴。</p>
+                </div>
+            </aside>
+
+            <section class="blog-list">
+                <article class="blog-card" data-category="tech">
+                    <h2>Vue 3 组合式 API 入门</h2>
+                    <div class="meta">
+                        <span>📅 2026-05-20</span>
+                        <span class="category">技术</span>
+                    </div>
+                    <p>本文介绍 Vue 3 中引入的组合式 API（Composition API），帮助你更好地组织代码逻辑...</p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </article>
+
+                <article class="blog-card" data-category="life">
+                    <h2>春日里的一杯咖啡</h2>
+                    <div class="meta">
+                        <span>📅 2026-05-15</span>
+                        <span class="category">生活</span>
+                    </div>
+                    <p>周末的下午，在咖啡馆里度过了一个宁静的下午...</p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </article>
+
+                <article class="blog-card" data-category="travel">
+                    <h2>苏州行记</h2>
+                    <div class="meta">
+                        <span>📅 2026-05-10</span>
+                        <span class="category">旅行</span>
+                    </div>
+                    <p>上有天堂，下有苏杭。终于在这个五一假期领略了苏州的园林之美...</p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </article>
+
+                <article class="blog-card" data-category="tech">
+                    <h2>CSS Grid 布局实战</h2>
+                    <div class="meta">
+                        <span>📅 2026-05-05</span>
+                        <span class="category">技术</span>
+                    </div>
+                    <p>CSS Grid 是现代 CSS 布局中最强大的工具之一。本文通过几个实战案例带你掌握它...</p>
+                    <a href="#" class="read-more">阅读更多 →</a>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>留言板</h2>
+            <form id="comment-form">
+                <div class="form-group">
+                    <label for="name">昵称</label>
+                    <input type="text" id="name" placeholder="请输入您的昵称" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" placeholder="请输入您的邮箱" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">留言</label>
+                    <textarea id="comment" rows="5" placeholder="请输入留言内容" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">提交留言</button>
+                    <button type="reset" class="btn">清空</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
